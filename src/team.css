@@ -1,0 +1,312 @@
+/* Common CSS Starts */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jost", sans-serif !important;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MuseoModerno", display;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  line-height: 150%;
+  margin-bottom: 2em;
+  font-size: 20px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.fix {
+  overflow: hidden;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
+/* Common CSS Ends */
+
+/* Header Section Starts */
+
+.h_menu_btn {
+  display: flex;
+  align-items: center;
+}
+.header_social {
+  margin-right: 20px;
+}
+.default_icon_style {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  color: #000;
+  position: relative;
+  z-index: 1111;
+  transition: all 0.3s ease;
+}
+.default_icon_style:hover {
+  color: #fff;
+}
+.default_icon_style::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease !important;
+}
+.default_icon_style::after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.header_social .default_icon_style::after {
+  background: #ff9083 !important;
+}
+
+.default_icon_style:hover::before {
+  opacity: 0;
+}
+.default_icon_style:hover::after {
+  top: 0;
+  left: 0;
+}
+
+.fq_btn .btn {
+  padding: 10px 20px !important;
+}
+.custom_btn {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  position: relative;
+  z-index: 111;
+  transition: all 0.3s ease;
+  color: #333333;
+}
+.custom_btn:hover {
+  color: #fff;
+}
+.custom_btn::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.custom_btn:hover::before {
+  opacity: 0;
+}
+.custom_btn::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.fq_btn .custom_btn::after {
+  background: #72dfe9;
+}
+.custom_btn:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* Header Section Ends */
+
+/* Hero Section starts */
+.hero {
+  background: #f8f8f8;
+  padding: 100px 0;
+}
+
+.about_sorobindu span {
+  color: #33358c;
+  font-weight: 500;
+}
+.about_sorobindu h1 {
+  font-size: 72px;
+  font-weight: 600;
+  padding: 15px 0;
+}
+.about_sorobindu p {
+  font-size: 20px;
+}
+
+.hero_btn .btn {
+  padding: 16px 45px;
+}
+.hero_btn .custom_btn::after {
+  background: #ff9083;
+}
+
+.hero_img img {
+  border-radius: 10px;
+}
+/* Hero Section Ends */
+
+/* Team Section Starts */
+.teem {
+  padding: 100px 0;
+}
+.teem_member img {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.team_addr {
+  padding: 16px 10px;
+}
+.team_addr .h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1c25;
+}
+.team_addr p {
+  color: #777d74;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.teem_social .default_icon_style.bgcc1::after {
+  background: #a8aaf1 !important;
+}
+.teem_social .default_icon_style.bgcc2::after {
+  background: #ff9083 !important;
+}
+.teem_social .default_icon_style.bgcc3::after {
+  background: #72dfe9 !important;
+}
+
+.teem_nth_style:nth-child(even) {
+  transform: translateY(30px);
+}
+
+/* teem  animation over css starts */
+.teem_member .teem_face span {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 1111;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  font-size: 26px;
+}
+.teem_member:hover .teem_face span {
+  opacity: 1;
+  visibility: visible;
+}
+.teem_member .teem_face {
+  position: relative;
+  border-radius: 10px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.teem_member .teem_face::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #a8aaf1b0;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.teem_member:hover .teem_face::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.teem_member .teem_face::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid #1c1c25;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 111;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.teem_member:hover .teem_face::after {
+  opacity: 1;
+  visibility: visible;
+}
+.teem_member:hover .teem_face img,
+.teem_member:hover .teem_face::before {
+  transform: translate(10px, 10px);
+}
+/* teem  animation over css Ends */
+/* Team Section Ends */
