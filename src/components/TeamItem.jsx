@@ -7,7 +7,7 @@ const TeamItem = () => {
             <img src="https://lh3.googleusercontent.com/p/AF1QipOfBgQae8edsAzIwXZXx_4lKqfO1ssj4Clj5zvU=s680-w680-h510" alt="" />
           </div>
           <div className="team_addr">
-            <p className="h4">Mark Flynn</p>
+            <p className="h4">Anukul Mahato</p>
             <p>Web Developer</p>
             <div className="teem_social">
               <a className="default_icon_style bgcc1 me-2" href="#"
